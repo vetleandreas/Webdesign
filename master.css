@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+}
+
+#logo {
+  width: 10em;
+  height: auto;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0.6em;
+  margin-bottom: -1.5em;
+  display: inline-block;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+  transition-duration: 2s;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  width: 8%;
+  height: 5%;
+  cursor: pointer;
+  background-color: #fffff5;
+  color: black;
+  font-size: 1.4rem;
+  border: 0px;
+}
+
+button:hover {
+  transition-duration: 0.5s;
+  font-weight: 500;
+  color: purple;
+  transform: scale(1.05);
+  border-bottom: 10px black;
+}
+
+body {
+  background-color: #ee73d1;
+}
+
+#navbar {
+  display: block;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: -0.2%;
+  height: 6.5em;
+  background-color: #fffff5;
+}
+
+#buttonsleft {
+  display: inline;
+  margin-left: 10%;
+}
+
+#buttonsright {
+  display: inline;
+  margin-right: 5%;
+}
+
+#band {
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  height: auto;
+}
+
+#footerline {
+  height: 1px;
+  background-color: white;
+}
+
+.mediabuttons {
+  background-color: #ee73d1;
+  display: inline-block;
+  width: 8%;
+  height: 5%;
+}
+
+#socialmedia {
+  margin-left: 29%;
+  margin-right: 29%;
+  width: 40%;
+  display: inline;
+}
