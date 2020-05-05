@@ -4,13 +4,13 @@ body {
 }
 
 #logo {
-  width: 10em;
-  height: auto;
+  height: 250px;
+  width: 250px;
   cursor: pointer;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
   margin-top: 0.6em;
-  margin-bottom: -1.5em;
+  margin-bottom: -11.5em;
   display: inline-block;
 }
 
@@ -76,13 +76,12 @@ body {
 .mediabuttons {
   background-color: #F4FDF1;
   display: inline-block;
-  width: 8%;
-  height: 5%;
+  width: 10px;
+  height: 10px;
 }
 
 #socialmedia {
   margin-left: 29%;
   margin-right: 29%;
-  width: 40%;
   display: inline;
 }
