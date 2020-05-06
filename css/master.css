@@ -4,19 +4,19 @@ body {
 }
 
 #logo {
-  height: 250px;
-  width: 250px;
   cursor: pointer;
   margin-left: 7.5%;
   margin-right: 7.5%;
-  margin-top: 0.6em;
-  margin-bottom: -11.5em;
+  margin-top: 0%;
+  margin-bottom: -2%;
   display: inline-block;
+  width: 10%;
+  height: 100%;
 }
 
 #logo:hover {
-  transform: scale(1.05);
-  transition-duration: 2s;
+  transform: scale(1.03);
+  transition-duration: 0.3s;
 }
 
 button {
@@ -31,10 +31,10 @@ button {
 }
 
 button:hover {
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   font-weight: 500;
   color: #FFD23F;
-  transform: scale(1.05);
+  transform: scale(1.02);
   border-bottom: 10px black;
 }
 
@@ -53,15 +53,16 @@ body {
 
 #buttonsleft {
   display: inline;
-  margin-left: 10%;
+  margin-left: 12.5%;
 }
 
 #buttonsright {
   display: inline;
-  margin-right: 5%;
+  margin-right: 12.5%;
 }
 
 #band {
+  margin-top: 2%;
   margin-left: 25%;
   margin-right: 25%;
   width: 50%;
@@ -70,14 +71,15 @@ body {
 
 #footerline {
   height: 1px;
-  background-color: #F4FDF1;
+  background-color: #6969B3;
+  margin-left, margin-right: 10%;
 }
 
 .mediabuttons {
-  background-color: #F4FDF1;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
+background-color: #F4FDF1;
+height: 10px;
+width: 8%;
+display: inline-block;
 }
 
 #socialmedia {
