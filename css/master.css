@@ -7,8 +7,6 @@ body {
   cursor: pointer;
   margin-left: 7.5%;
   margin-right: 7.5%;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
   display: inline-block;
   width: 10%;
   height: auto;
@@ -66,10 +64,11 @@ body {
 #footerline {
   margin-left: 9.5%;
   margin-right: 9.5%;
-  height: 1px;
+  height: 2px;
   width: 80%;
   background-color: #6969B3;
-  margin-left, margin-right: 10%;
+  margin-left: 10%; 
+  margin-right: 10%;
 }
 
 .mediabuttons {
@@ -84,7 +83,7 @@ margin-bottom: 1%;
   margin-left: 29%;
   margin-right: 29%;
   display: inline;
-  margin-bottom: 10%;
+  /*margin-bottom: 10%; */
 }
 
 .Slideshow {
@@ -103,4 +102,18 @@ margin-bottom: 1%;
 .mediapic {
   width: 3em;
   height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #6969B3;
+  padding: 5px;
+}
+.grid-item {
+  background-color: #F4FDF1;
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
 }
