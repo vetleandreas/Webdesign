@@ -5,13 +5,12 @@ body {
 
 #logo {
   cursor: pointer;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   display: inline-block;
-  width: 10%;
+  width: 7%;
   height: auto;
+  margin-top: -1%;
 }
 
 #logo:hover {
@@ -24,10 +23,23 @@ button {
   width: 8%;
   height: 5%;
   cursor: pointer;
-  background-color: #6969B3;
+  background-color: rgba(105, 105, 179, 0);
   color: #F4FDF1;
   font-size: 1.5em;
   border: 0px;
+}
+
+p {
+font-family: "Montserrat", sans-serif;
+font-size: 4em;
+font-weight: 900;
+color: #6969b3;
+text-shadow: 3px 3px 0 #749;
+}
+
+#title {
+  margin-top: 0.5%;
+  margin-bottom: 0%;
 }
 
 button:hover {
@@ -39,7 +51,8 @@ button:hover {
 }
 
 body {
-  background-color: #F4FDF1;
+  background-color: #f4fdf1;
+background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
 }
 
 #navbar {
@@ -47,20 +60,18 @@ body {
   width: 100%;
   margin-top: 0%;
   height: 6.5em;
-  background-color: #6969B3;
-}
-
-#buttonsnavbar  {
+  background-color: #6969b3;
+background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
 }
 
 #buttonsleft {
   display: inline;
-  margin-left: 12.5%;
+  margin-left: 19.5%;
 }
 
 #buttonsright {
   display: inline;
-  margin-right: 10.5%;
+  margin-right: 16%;
 }
 
 #footerline {
@@ -73,7 +84,7 @@ body {
 }
 
 .mediabuttons {
-background-color: #F4FDF1;
+background-color: rgba(255, 255, 255, 0);
 height: auto;
 width: 8%;
 display: inline-block;
@@ -90,17 +101,22 @@ margin-bottom: 1%;
 .Slideshow {
   display:none;
   margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 9%;
-  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
   height: auto;
 }
 
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:1em;width:1em;padding:0;}
-.w3-left, .w3-right {font-size: 2em;margin-top:-0.8em;}
+.w3-badge {
+  cursor:pointer;
+  height:1em;
+  width:1em;
+  padding:0;
+}
 
 .mediapic {
   width: 3em;
   height: auto;
 }
+
+@media sdiogjtdhpdoigj;
