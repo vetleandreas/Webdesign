@@ -10,46 +10,41 @@ function BurgerMenu() {
 };
 
 // Kode for slideshow
-/*
-let slideIndex = 0;
-karusell();
+var slideIndex = 0;
+showSlides(slideIndex);
 
-function karusell() {
-  let i;
-  let x = document.getElementsByClassName("Slideshow");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("Slideshow");
+  var dots = document.getElementsByClassName("demo");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(karusell, 6000); // Endrer bilde hvert 10. sekund
-}; */
-// Kode for knapper på slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("Slideshow");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
+  console.log(slideIndex);
+  var slidevar = setTimeout(showSlides, 6000); // Endrer bilde hvert 6. sekund
 
-};
+// Resetter timer når man klikker på knappene til slides
+  let slide1=document.getElementById("slide1");
+  let slide2=document.getElementById("slide2");
+  let slide3=document.getElementById("slide3");
+
+  slide1.onclick = function(){
+    clearTimeout(slidevar);
+        showSlides(slideIndex=0);
+  }
+  slide2.onclick = function(){
+    clearTimeout(slidevar);
+      showSlides(slideIndex=1);
+  }
+  slide3.onclick = function(){
+    clearTimeout(slidevar);
+      showSlides(slideIndex=2);
+  }
+}

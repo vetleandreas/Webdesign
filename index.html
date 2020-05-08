@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Jespen Popstjærne</title>
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
     <link rel="stylesheet" href="css/master.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.w3schools.com/w3css/4/w3.css"
     />
   <!-- <link href="/favicon.ico" rel="icon" type="image/x-icon" /> -->
   <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
@@ -54,11 +54,9 @@
       <img class="Slideshow" src="img/slide2.jpg">
       <img class="Slideshow" src="img/slide3.jpg">
         <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:78%">
-        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" id="slide1" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" id="slide2" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" id="slide3" onclick="currentDiv(3)"></span>
  </div>
     </div>
     <br />

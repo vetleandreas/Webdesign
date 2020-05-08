@@ -26,7 +26,7 @@ button {
   cursor: pointer;
   background-color: #6969B3;
   color: #F4FDF1;
-  font-size: 1.4rem;
+  font-size: 1.5em;
   border: 0px;
 }
 
@@ -77,6 +77,7 @@ background-color: #F4FDF1;
 height: auto;
 width: 8%;
 display: inline-block;
+margin-bottom: 1%;
 }
 
 #socialmedia {
@@ -100,6 +101,6 @@ display: inline-block;
 .w3-left, .w3-right {font-size: 2em;margin-top:-0.8em;}
 
 .mediapic {
-  width: 4em;
+  width: 3em;
   height: auto;
 }
