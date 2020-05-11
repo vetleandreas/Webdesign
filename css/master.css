@@ -35,6 +35,7 @@ h1 {
   font-weight: 900;
   color: #6969b3;
   text-shadow: 3px 3px 0 #749;
+  text-align: center;
 }
 
 #title {
@@ -120,6 +121,7 @@ body {
   height: auto;
 }
 
+/*Merch.html*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -132,4 +134,49 @@ body {
   padding: 50px;
   font-size: 30px;
   text-align: center;
+}
+
+/*Bio.html*/
+.newspaper {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 20px;
+}
+
+/*tour.html*/
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #CFCCE8;
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+} 
+
+th.color {
+  color: #54549B;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #f4fdf1;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #DEDBF0;
+}
+
+/*contact.html*/
+p.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+mark.contact {
+  background-color: #f4fdf1;
+  font-weight: bold;
 }
