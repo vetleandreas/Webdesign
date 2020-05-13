@@ -1,11 +1,17 @@
 // Kode for hamburgermeny
 
 function BurgerMenu() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
+  let x = document.getElementById("buttonsleft");
+  let y = document.getElementById("buttonsright");
+  if (x.style.display === "inline") {
     x.style.display = "none";
   } else {
-    x.style.display = "block";
+    x.style.display = "inline";
+  }
+  if (y.style.display === "inline") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "inline";
   }
 };
 

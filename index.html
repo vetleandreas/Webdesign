@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <title>Jespen Popstjærne</title>
     <link
       rel="stylesheet"
@@ -12,9 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap"
       rel="stylesheet"
     />
-    <link 
+    <link
       href='https://fonts.googleapis.com/css2?family=Concert+One&display=swap'
       rel='stylesheet'
+      />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
   <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
   </head>
@@ -22,6 +26,9 @@
   <body>
     <div id="navbar">
       <div id="buttonsnavbar">
+          <a href="javascript:void(0);" id="burgermeny" onclick="BurgerMenu()">
+            <i class="fa fa-bars" id="burgerbutton"></i>
+          </a>
         <div id="buttonsleft">
           <button onclick="window.location.href = 'html/bio.html';">
             Biografi
@@ -37,6 +44,11 @@
           src="img/logo.png"
           alt="Logo"
           id="logo"
+          onclick="window.location.href = 'index.html';"
+        />
+        <img src="img/logo-jeps.png"
+          alt="Logo"
+          id="logo2"
           onclick="window.location.href = 'index.html';"
         />
         <div id="buttonsright">
@@ -77,6 +89,9 @@
         </button>
         <button onclick="window.location.href = 'tidal.com' ; " class="mediabuttons">
           <img src="img/twitter.png" alt="tidal" class="mediapic"/>
+        </button>
+        <button onclick="window.location.href = 'apple.com' ; " class="mediabuttons">
+          <img src="img/applemusic.png" alt="applemusic" class="mediapic"/>
         </button>
         <button onclick="window.location.href = 'apple.com' ; " class="mediabuttons">
           <img src="img/applemusic.png" alt="applemusic" class="mediapic"/>
