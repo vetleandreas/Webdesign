@@ -1,0 +1,300 @@
+html,
+body {
+  margin: 0;
+}
+
+#logo {
+  cursor: pointer;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+  width: 7%;
+  height: auto;
+  margin-top: -1%;
+}
+
+#logo:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+}
+
+button {
+  font-family: "Concert one", sans-serif;
+  width: 8%;
+  height: 5%;
+  cursor: pointer;
+  background-color: rgba(105, 105, 179, 0);
+  color: #F4FDF1;
+  font-size: 1.5em;
+  border: 0px;
+}
+
+h1 {
+  font-family: "Concert one", sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  color: #6969b3;
+  text-shadow: 3px 3px 0 #749;
+  text-align: center;
+}
+
+#title {
+  margin-top: 0.5%;
+  margin-bottom: 0%;
+}
+
+button:hover {
+  transition-duration: 0.3s;
+  font-weight: 500;
+  color: #FFF766;
+  transform: scale(1.02);
+  border-bottom: 10px black;
+}
+
+body {
+  background-color: #f4fdf1;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+#navbar {
+  display: block;
+  width: 100%;
+  margin-top: 0%;
+  height: 6.5em;
+  background-color: #6969b3;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+}
+
+#buttonsleft {
+  display: inline;
+  margin-left: 19.5%;
+}
+
+#buttonsright {
+  display: inline;
+  margin-right: 16%;
+}
+
+#footerline {
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+  height: 1px;
+  width: 80%;
+  background-color: #6969B3;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mediabuttons {
+  background-color: rgba(255, 255, 255, 0);
+  height: auto;
+  width: 8%;
+  display: inline-block;
+  margin-bottom: 1%;
+}
+
+#socialmedia {
+  margin-left: 29%;
+  margin-right: 29%;
+  display: inline;
+  /*margin-bottom: 10%; */
+}
+
+.Slideshow {
+  display:none;
+  margin-top: 3%;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+  height: auto;
+}
+
+.w3-badge {
+  cursor:pointer;
+  height:1em;
+  width:1em;
+  padding:0;
+}
+
+.mediapic {
+  width: 3em;
+  height: auto;
+}
+
+/*Index.html*/
+.w3-center{
+  font-family: "Over the rainbow", sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  color: #6969b3;
+  text-shadow: 3px 3px 0 #749;
+  text-align: center;
+}
+
+/*Gjelder alle undersider*/
+.undersider {
+  font-family: "Concert one", sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  color: #6969b3;
+  text-shadow: 3px 3px 0 #749;
+  text-align: center;
+}
+
+/*Merch.html*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #6969B3;
+  padding: 5px;
+}
+.grid-item {
+  background-color: #F4FDF1;
+  opacity: 0.5;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item:hover{
+  opacity: 1;
+}
+/*Bio.html*/
+.newspaper {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 20px;
+}
+
+/*tour.html*/
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #CFCCE8;
+}
+
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+th.color {
+  color: #54549B;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #f4fdf1;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #DEDBF0;
+}
+
+/*contact.html*/
+p.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+mark.contact {
+  background-color: #f4fdf1;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px){
+
+  h1 {
+    font-family: "Concert one", sans-serif;
+    font-weight: 900;
+    color: #6969b3;
+    text-shadow: 3px 3px 0 #749;
+    text-align: center;
+  }
+
+  #title {
+    font-size: 2.4rem;
+    margin-top: 0.5%;
+    margin-bottom: 4%;
+  }
+
+  .mediabuttons {
+    background-color: rgba(255, 255, 255, 0);
+    height: auto;
+    width: 14.8%;
+    display: inline-block;
+    margin-bottom: 1%;
+  }
+
+  .mediapic {
+    width: 96%;
+    height: auto;
+  }
+
+  #socialmedia {
+    margin-left: 2%;
+    margin-right: 0%;
+    display: inline;
+    /*margin-bottom: 10%; */
+  }
+
+  .w3-badge {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  #slide1,#slide2,#slide3 {
+    margin-bottom: -4%;
+  }
+
+  #buttonsleft,#buttonsright {
+    overflow: visible;
+    position: static;
+    display: none; /* none */
+  }
+
+  #navbar {
+    height: auto;
+    min-height: 3rem;
+  }
+
+  #burgermeny {
+    display: block;
+    position: absolute;
+    margin-right: 4%;
+    right: 0;
+    top: 0;
+  }
+
+  #burgerbutton {
+    color: white;
+  }
+
+  #buttonsnavbar button {
+    color: white;
+    padding: 0.6em 0.8em;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+  }
+
+  #logo {
+    width: 40%;
+    height: auto;
+    display: none;
+  }
+
+  #logo2 {
+    cursor: pointer;
+    margin-left: 29%;
+    margin-right: 29%;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    margin-top: -4%;
+  }
+}
