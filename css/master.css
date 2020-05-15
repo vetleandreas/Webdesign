@@ -4,7 +4,18 @@ body {
   height: 100%;
   padding: 0;
 }
-
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#bodybody {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 #logo {
   cursor: pointer;
   margin-left: 2.5%;
@@ -16,26 +27,40 @@ body {
 }
 
 #logo:hover {
-  transform: scale(1.03);
-  transition-duration: 0.3s;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
 
 button {
-  font-family: "Concert one", sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   width: 8%;
   height: 5%;
-  cursor: pointer;
   background-color: rgba(105, 105, 179, 0);
   color: #f4fdf1;
-  font-size: 1.5em;
+  font-size: 2em;
   border: 0px;
+  transition-duration: 0.3s;
+}
+
+#buttonsleft button,
+#buttonsright button {
+  cursor: pointer;
 }
 
 h1 {
   font-family: "Concert one", sans-serif;
-  font-size: 4em;
+  font-size: 7em;
   font-weight: 900;
   color: #6969b3;
+  text-shadow: 3px 3px 0 #749;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 7em;
+  font-weight: 900;
+  color: rgba(30, 30, 30, 0.9);
   text-shadow: 3px 3px 0 #749;
   text-align: center;
 }
@@ -46,11 +71,10 @@ h1 {
 }
 
 button:hover {
-  transition-duration: 0.3s;
+  transition: 0.2s ease-in-out;
   font-weight: 500;
   color: #fff766;
   transform: scale(1.02);
-  border-bottom: 10px black;
 }
 
 body {
@@ -79,10 +103,8 @@ body {
 
 #footerline {
   height: 1px;
-  width: 90%;
+  width: 100%;
   background-color: #6969b3;
-  margin-left: 5%;
-  margin-right: 5%;
   margin-top: 5%;
 }
 
@@ -95,8 +117,8 @@ body {
 }
 
 #socialmedia {
-  margin-left: 29%;
-  margin-right: 29%;
+  margin-left: 25%;
+  margin-right: 24%;
   display: inline;
   /*margin-bottom: 10%; */
 }
@@ -106,6 +128,7 @@ body {
   margin-top: 3%;
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .w3-badge {
@@ -118,6 +141,13 @@ body {
 .mediapic {
   width: 3em;
   height: auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.mediapic:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 /*Index.html*/
@@ -146,6 +176,8 @@ body {
   grid-template-columns: auto auto auto;
   background-color: #6969b3;
   padding: 5px;
+  width: 70%;
+  margin-left: 15%;
 }
 .grid-item {
   background-color: #f4fdf1;
@@ -155,6 +187,7 @@ body {
   padding: 50px;
   font-size: 30px;
   text-align: center;
+  transition: 0.4s;
 }
 
 .grid-item:hover {
@@ -174,10 +207,15 @@ td {
   border: 1px solid black;
   text-align: center;
   border-collapse: collapse;
+  height: 5rem;
 }
 
 th {
+  width: 5%;
+  height: 10%;
   background-color: #cfcce8;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 table.center {
@@ -189,17 +227,24 @@ th.color {
   color: #54549b;
 }
 
+td {
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
+}
+/*
 table#t01 tr:nth-child(even) {
   background-color: #f4fdf1;
 }
 table#t01 tr:nth-child(odd) {
   background-color: #dedbf0;
 }
-
+*/
 /*contact.html*/
-p.contact {
+div.contact {
   padding: 20px;
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
 }
 
 mark.contact {
@@ -207,7 +252,84 @@ mark.contact {
   font-weight: bold;
 }
 
+.Youtube {
+  width: 70%;
+  height: 40rem;
+  margin-left: 15%;
+  display: inline-block;
+  margin-top: 1%;
+}
+
+.Spotify {
+  width: 70%;
+  height: 27rem;
+  margin-left: 15%;
+  display: inline-block;
+  margin-top: 1%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+#burgermeny,
+#logo2 {
+  display: none;
+}
+
+.newspaper {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+#bandlong {
+  width: 100%;
+  height: auto;
+}
+
+.merch {
+  display: inline-block;
+  text-align: center;
+}
+
+#merchbar {
+  width: 80%;
+  margin-left: 12%;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#newsbar {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.merchbuy {
+  border: 2px black solid;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  background-color: purple;
+}
+
+.merchpic {
+  width: 80%;
+  margin: 2%;
+}
+
+.newspic {
+  width: 36%;
+  margin: 2%;
+}
+
 @media (max-width: 1024px) {
+  #burgermeny,
+  #logo2 {
+    display: block;
+  }
+
   h1 {
     font-family: "Concert one", sans-serif;
     font-weight: 900;
@@ -217,9 +339,9 @@ mark.contact {
   }
 
   #title {
-    font-size: 2.4rem;
-    margin-top: 0.5%;
-    margin-bottom: 4%;
+    font-size: 2.5em;
+    margin-top: 4%;
+    margin-bottom: 10%;
   }
 
   .mediabuttons {
@@ -227,19 +349,25 @@ mark.contact {
     height: auto;
     width: 15.2%;
     display: inline-block;
+    padding: 0;
   }
 
   .mediapic {
     width: 96%;
     height: auto;
+    transform: scale(1);
+  }
+
+  .mediapic:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
   }
 
   #socialmedia {
-    margin-left: 4%;
-    margin-right: 2%;
+    margin-left: 0.5%;
+    margin-right: 0%;
     display: inline;
-    position: absolute;
-    bottom: 3rem;
+    position: static;
   }
 
   .w3-badge {
@@ -265,7 +393,6 @@ mark.contact {
     min-height: 2%;
     position: relative;
     overflow-y: hidden;
-    transition: 0.5s;
   }
 
   #burgermeny {
@@ -281,13 +408,14 @@ mark.contact {
   #buttonsleft button,
   #buttonsright button {
     width: 100%;
-    color: #6969b3;
+    color: white;
     text-decoration: none;
     padding: 4% 4%;
     font-size: 1.5rem;
     display: block;
     z-index: 1;
     border: none;
+    overflow: hidden;
   }
 
   #buttonsleft button:hover,
@@ -298,7 +426,7 @@ mark.contact {
 
   #buttonsleft button:active,
   #buttonsright button:active {
-    background-color: yellow;
+    background-color: rgba(238, 238, 0, 0.66);
   }
 
   #logo {
@@ -307,10 +435,10 @@ mark.contact {
 
   #logo2 {
     cursor: pointer;
-    margin-left: 40%;
+    margin-left: 39%;
     margin-right: 30%;
     display: inline-block;
-    width: 30%;
+    width: 22%;
     height: auto;
     margin-top: -30%;
     margin-bottom: -40%;
@@ -322,21 +450,105 @@ mark.contact {
     margin-top: 2%;
   }
 
+  /*
   body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+  #bodybody {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
 
-  #bodybody {
-    width: 100%;
-    height: 100%;
-  }
-
   #footerline {
-    position: absolute;
+    position: static;
     bottom: 7.5rem;
     overflow: hidden;
     z-index: 0;
+  }
+
+  .Youtube {
+    width: 90%;
+    height: 22rem;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+
+  .Spotify {
+    width: 90%;
+    height: 17rem;
+    margin-left: 5%;
+    display: inline-block;
+    margin-top: 1%;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  div.contact {
+    font-size: 1.2em;
+  }
+
+  th {
+    width: 5%;
+    height: 5%;
+    font-size: 2rem;
+  }
+  td {
+    font-size: 1.2rem;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .griditem {
+    width: 90%;
+    margin-left: 9%;
+  }
+
+  .grid-container {
+    max-width: 90%;
+  }
+
+  .merch {
+    display: inline-block;
+    text-align: center;
+  }
+
+  #merchbar {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .merchbuy {
+    border: 2px black solid;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    background-color: purple;
+    margin-bottom: 5%;
+  }
+
+  .merchpic {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .newspic {
+    width: 90%;
+    margin: 2%;
+  }
+
+  #newsbar {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
   }
 }

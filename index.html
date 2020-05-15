@@ -17,80 +17,104 @@
       href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Catamaran:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16" />
   </head>
 
   <body>
     <div id="bodybody">
-      <div id="navbar">
-        <img
-          src="img/logo.png"
-          alt="Logo"
-          id="logo"
-          onclick="window.location.href = 'index.html';"
-        />
-        <img
-          src="img/logo-jeps.png"
-          alt="Logo"
-          id="logo2"
-          onclick="window.location.href = 'index.html';"
-        />
-        <button
-          href="javascript:void(0);"
-          id="burgermeny"
-          onclick="BurgerMenu()"
-          style=""
-        ></button>
-        <div id="buttonsnavbar">
-          <div id="buttonsleft">
-            <button onclick="window.location.href = 'html/bio.html';">
-              Biografi
-            </button>
-            <button onclick="window.location.href = 'html/music.html';">
-              Musikk
-            </button>
-            <button onclick="window.location.href = 'html/tour.html';">
-              Tour
-            </button>
-          </div>
-          <div id="buttonsright">
-            <button onclick="window.location.href = 'html/news.html';">
-              Nyheter
-            </button>
-            <button onclick="window.location.href = 'html/merch.html';">
-              Merch
-            </button>
-            <button onclick="window.location.href = 'html/contact.html';">
-              Kontakt
-            </button>
+      <div id="main">
+        <div id="navbar">
+          <img
+            src="img/logo.png"
+            alt="Logo"
+            id="logo2"
+            onclick="window.location.href = 'index.html';"
+          />
+          <div id="buttonsnavbar">
+            <button
+              href="javascript:void(0);"
+              id="burgermeny"
+              onclick="BurgerMenu()"
+              style=""
+            ></button>
+            <div id="buttonsleft">
+              <button onclick="window.location.href = 'bio.html';">
+                Biografi
+              </button>
+              <button onclick="window.location.href = 'music.html';">
+                Musikk
+              </button>
+              <button onclick="window.location.href = 'tour.html';">
+                Tour
+              </button>
+            </div>
+            <img
+              src="img/logo.png"
+              alt="Logo"
+              id="logo"
+              onclick="window.location.href = 'index.html';"
+            />
+            <div id="buttonsright">
+              <button onclick="window.location.href = 'news.html';">
+                Nyheter
+              </button>
+              <button onclick="window.location.href = 'merch.html';">
+                Merch
+              </button>
+              <button onclick="window.location.href = 'contact.html';">
+                Kontakt
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="navbarhide">
-        <h1 id="title" class="w3-center">Jepsen Popstjærne</h1>
-        <div class="w3-content w3-display-container">
-          <img class="Slideshow" src="img/slide1.jpg" />
-          <img class="Slideshow" src="img/slide2.jpg" />
-          <img class="Slideshow" src="img/slide3.jpg" />
-          <div
-            class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-            style="width: 100%;"
-          >
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              id="slide1"
-              onclick="currentDiv(1)"
-            ></span>
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              id="slide2"
-              onclick="currentDiv(2)"
-            ></span>
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              id="slide3"
-              onclick="currentDiv(3)"
-            ></span>
+        <div id="navbarhide">
+          <h1 id="title" class="w3-center">Jepsen Popstjærne</h1>
+          <div class="w3-content w3-display-container">
+            <img
+              class="Slideshow"
+              src="img/slide1.jpg"
+              onclick="window.location.href = 'music.html';"
+            />
+            <img
+              class="Slideshow"
+              src="img/slide2.jpg"
+              onclick="window.location.href = 'https://www.merchbar.com/search?q=jepsen';"
+            />
+            <img
+              class="Slideshow"
+              src="img/slide3.jpg"
+              onclick="window.location.href = 'tour.html';"
+            />
+            <div
+              class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+              style="width: 100%;"
+            >
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                id="slide1"
+                onclick="currentDiv(1)"
+              ></span>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                id="slide2"
+                onclick="currentDiv(2)"
+              ></span>
+              <span
+                class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                id="slide3"
+                onclick="currentDiv(3)"
+              ></span>
+            </div>
+          </div>
+          <div class="contact">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </div>
       </div>
@@ -101,40 +125,40 @@
             onclick="window.location.href = 'facebook.com' ; "
             class="mediabuttons"
           >
-            <img src="img/facebook.png" alt="facebook" class="mediapic" />
+            <img src="img/pfacebook.png" alt="facebook" class="mediapic" />
           </button>
           <button
             onclick="window.location.href = 'instagram.com' ; "
             class="mediabuttons"
           >
-            <img src="img/instagram.png" alt="instagram" class="mediapic" />
+            <img src="img/pinstagram.png" alt="instagram" class="mediapic" />
           </button>
           <button
             onclick="window.location.href = 'spotify.com' ; "
             class="mediabuttons"
           >
-            <img src="img/youtube.png" alt="spotify" class="mediapic" />
+            <img src="img/pyoutube.png" alt="youtube" class="mediapic" />
           </button>
           <button
             onclick="window.location.href = 'tidal.com' ; "
             class="mediabuttons"
           >
-            <img src="img/twitter.png" alt="tidal" class="mediapic" />
+            <img src="img/pspotify.png" alt="spotify" class="mediapic" />
           </button>
           <button
             onclick="window.location.href = 'apple.com' ; "
             class="mediabuttons"
           >
-            <img src="img/applemusic.png" alt="applemusic" class="mediapic" />
+            <img src="img/papplemusic.png" alt="applemusic" class="mediapic" />
           </button>
           <button
             onclick="window.location.href = 'apple.com' ; "
             class="mediabuttons"
           >
-            <img src="img/applemusic.png" alt="applemusic" class="mediapic" />
+            <img src="img/ptwitter.png" alt="twitter" class="mediapic" />
           </button>
-        </div>
       </footer>
+    </div>
     </div>
   </body>
   <script src="js/index.js"></script>
