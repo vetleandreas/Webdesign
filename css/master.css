@@ -1,6 +1,8 @@
 html,
 body {
   margin: 0;
+  height: 100%;
+  padding: 0;
 }
 
 #logo {
@@ -24,7 +26,7 @@ button {
   height: 5%;
   cursor: pointer;
   background-color: rgba(105, 105, 179, 0);
-  color: #F4FDF1;
+  color: #f4fdf1;
   font-size: 1.5em;
   border: 0px;
 }
@@ -46,7 +48,7 @@ h1 {
 button:hover {
   transition-duration: 0.3s;
   font-weight: 500;
-  color: #FFF766;
+  color: #fff766;
   transform: scale(1.02);
   border-bottom: 10px black;
 }
@@ -76,13 +78,12 @@ body {
 }
 
 #footerline {
-  margin-left: 9.5%;
-  margin-right: 9.5%;
   height: 1px;
-  width: 80%;
-  background-color: #6969B3;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 90%;
+  background-color: #6969b3;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
 }
 
 .mediabuttons {
@@ -101,19 +102,17 @@ body {
 }
 
 .Slideshow {
-  display:none;
+  display: none;
   margin-top: 3%;
-  margin-left: 0%;
-  margin-right: 0%;
   width: 100%;
   height: auto;
 }
 
 .w3-badge {
-  cursor:pointer;
-  height:1em;
-  width:1em;
-  padding:0;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  padding: 0;
 }
 
 .mediapic {
@@ -122,7 +121,7 @@ body {
 }
 
 /*Index.html*/
-.w3-center{
+.w3-center {
   font-family: "Over the rainbow", sans-serif;
   font-size: 4em;
   font-weight: 900;
@@ -145,11 +144,11 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #6969B3;
+  background-color: #6969b3;
   padding: 5px;
 }
 .grid-item {
-  background-color: #F4FDF1;
+  background-color: #f4fdf1;
   opacity: 0.5;
   background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
   border: 0.5px solid rgba(0, 0, 0, 0.8);
@@ -158,7 +157,7 @@ body {
   text-align: center;
 }
 
-.grid-item:hover{
+.grid-item:hover {
   opacity: 1;
 }
 /*Bio.html*/
@@ -169,30 +168,32 @@ body {
 }
 
 /*tour.html*/
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   text-align: center;
   border-collapse: collapse;
 }
 
 th {
-  background-color: #CFCCE8;
+  background-color: #cfcce8;
 }
 
 table.center {
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th.color {
-  color: #54549B;
+  color: #54549b;
 }
 
 table#t01 tr:nth-child(even) {
   background-color: #f4fdf1;
 }
 table#t01 tr:nth-child(odd) {
- background-color: #DEDBF0;
+  background-color: #dedbf0;
 }
 
 /*contact.html*/
@@ -206,8 +207,7 @@ mark.contact {
   font-weight: bold;
 }
 
-@media (max-width: 1024px){
-
+@media (max-width: 1024px) {
   h1 {
     font-family: "Concert one", sans-serif;
     font-weight: 900;
@@ -225,9 +225,8 @@ mark.contact {
   .mediabuttons {
     background-color: rgba(255, 255, 255, 0);
     height: auto;
-    width: 14.8%;
+    width: 15.2%;
     display: inline-block;
-    margin-bottom: 1%;
   }
 
   .mediapic {
@@ -236,10 +235,11 @@ mark.contact {
   }
 
   #socialmedia {
-    margin-left: 2%;
-    margin-right: 0%;
+    margin-left: 4%;
+    margin-right: 2%;
     display: inline;
-    /*margin-bottom: 10%; */
+    position: absolute;
+    bottom: 3rem;
   }
 
   .w3-badge {
@@ -247,54 +247,96 @@ mark.contact {
     height: 0.8em;
   }
 
-  #slide1,#slide2,#slide3 {
+  #slide1,
+  #slide2,
+  #slide3 {
     margin-bottom: -4%;
   }
 
-  #buttonsleft,#buttonsright {
+  #buttonsleft,
+  #buttonsright {
     overflow: visible;
     position: static;
-    display: none; /* none */
+    display: none;
   }
 
   #navbar {
     height: auto;
-    min-height: 3rem;
+    min-height: 2%;
+    position: relative;
+    overflow-y: hidden;
+    transition: 0.5s;
   }
 
   #burgermeny {
-    display: block;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
-    margin-right: 4%;
-    right: 0;
-    top: 0;
+    top: 0.1%;
+    left: 82%;
+    transition: 0.3s ease-in-out;
+    outline: 0;
   }
 
-  #burgerbutton {
-    color: white;
-  }
-
-  #buttonsnavbar button {
-    color: white;
-    padding: 0.6em 0.8em;
+  #buttonsleft button,
+  #buttonsright button {
+    width: 100%;
+    color: #6969b3;
     text-decoration: none;
-    font-size: 1em;
+    padding: 4% 4%;
+    font-size: 1.5rem;
     display: block;
+    z-index: 1;
+    border: none;
+  }
+
+  #buttonsleft button:hover,
+  #buttonsright button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #buttonsleft button:active,
+  #buttonsright button:active {
+    background-color: yellow;
   }
 
   #logo {
-    width: 40%;
-    height: auto;
     display: none;
   }
 
   #logo2 {
     cursor: pointer;
-    margin-left: 29%;
-    margin-right: 29%;
+    margin-left: 40%;
+    margin-right: 30%;
     display: inline-block;
-    width: 40%;
+    width: 30%;
     height: auto;
-    margin-top: -4%;
+    margin-top: -30%;
+    margin-bottom: -40%;
+  }
+
+  #buttonsnavbar {
+    min-height: 2rem;
+    max-height: 20rem;
+    margin-top: 2%;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bodybody {
+    width: 100%;
+    height: 100%;
+  }
+
+  #footerline {
+    position: absolute;
+    bottom: 7.5rem;
+    overflow: hidden;
+    z-index: 0;
   }
 }

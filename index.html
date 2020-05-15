@@ -1,103 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <title>Jespen Popstjærne</title>
-    <link
-      rel="stylesheet"
-      href="https://www.w3schools.com/w3css/4/w3.css"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
     />
+    <title>Jespen Popstjærne</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="css/master.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap"
       rel="stylesheet"
     />
     <link
-      href='https://fonts.googleapis.com/css2?family=Concert+One&display=swap'
-      rel='stylesheet'
-      />
-    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-  <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
+    />
+    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16" />
   </head>
 
   <body>
-    <div id="navbar">
-      <div id="buttonsnavbar">
-          <a href="javascript:void(0);" id="burgermeny" onclick="BurgerMenu()">
-            <i class="fa fa-bars" id="burgerbutton"></i>
-          </a>
-        <div id="buttonsleft">
-          <button onclick="window.location.href = 'html/bio.html';">
-            Biografi
-          </button>
-          <button onclick="window.location.href = 'html/music.html';">
-            Musikk
-          </button>
-          <button onclick="window.location.href = 'html/tour.html';">
-            Tour
-          </button>
-        </div>
+    <div id="bodybody">
+      <div id="navbar">
         <img
           src="img/logo.png"
           alt="Logo"
           id="logo"
           onclick="window.location.href = 'index.html';"
         />
-        <img src="img/logo-jeps.png"
+        <img
+          src="img/logo-jeps.png"
           alt="Logo"
           id="logo2"
           onclick="window.location.href = 'index.html';"
         />
-        <div id="buttonsright">
-          <button onclick="window.location.href = 'html/news.html';">
-            Nyheter
-          </button>
-          <button onclick="window.location.href = 'html/merch.html';">
-            Merch
-          </button>
-          <button onclick="window.location.href = 'html/contact.html';">
-            Kontakt
-          </button>
+        <button
+          href="javascript:void(0);"
+          id="burgermeny"
+          onclick="BurgerMenu()"
+          style=""
+        ></button>
+        <div id="buttonsnavbar">
+          <div id="buttonsleft">
+            <button onclick="window.location.href = 'html/bio.html';">
+              Biografi
+            </button>
+            <button onclick="window.location.href = 'html/music.html';">
+              Musikk
+            </button>
+            <button onclick="window.location.href = 'html/tour.html';">
+              Tour
+            </button>
+          </div>
+          <div id="buttonsright">
+            <button onclick="window.location.href = 'html/news.html';">
+              Nyheter
+            </button>
+            <button onclick="window.location.href = 'html/merch.html';">
+              Merch
+            </button>
+            <button onclick="window.location.href = 'html/contact.html';">
+              Kontakt
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <h1 id="title" class="w3-center">Jepsen Popstjærne</h1>
-    <div class="w3-content w3-display-container">
-      <img class="Slideshow" src="img/slide1.jpg">
-      <img class="Slideshow" src="img/slide2.jpg">
-      <img class="Slideshow" src="img/slide3.jpg">
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" id="slide1" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" id="slide2" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" id="slide3" onclick="currentDiv(3)"></span>
- </div>
-    </div>
-    <footer>
-      <p id="footerline"></p>
-      <div id="socialmedia">
-        <button onclick="window.location.href = 'facebook.com' ; " class="mediabuttons">
-        <img src="img/facebook.png" alt="facebook" class="mediapic" />
-        </button>
-        <button onclick="window.location.href = 'instagram.com' ; " class="mediabuttons">
-         <img src="img/instagram.png" alt="instagram" class="mediapic"/>
-        </button>
-        <button onclick="window.location.href = 'spotify.com' ; " class="mediabuttons">
-          <img src="img/youtube.png" alt="spotify" class="mediapic"/>
-        </button>
-        <button onclick="window.location.href = 'tidal.com' ; " class="mediabuttons">
-          <img src="img/twitter.png" alt="tidal" class="mediapic"/>
-        </button>
-        <button onclick="window.location.href = 'apple.com' ; " class="mediabuttons">
-          <img src="img/applemusic.png" alt="applemusic" class="mediapic"/>
-        </button>
-        <button onclick="window.location.href = 'apple.com' ; " class="mediabuttons">
-          <img src="img/applemusic.png" alt="applemusic" class="mediapic"/>
-        </button>
+      <div id="navbarhide">
+        <h1 id="title" class="w3-center">Jepsen Popstjærne</h1>
+        <div class="w3-content w3-display-container">
+          <img class="Slideshow" src="img/slide1.jpg" />
+          <img class="Slideshow" src="img/slide2.jpg" />
+          <img class="Slideshow" src="img/slide3.jpg" />
+          <div
+            class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+            style="width: 100%;"
+          >
+            <span
+              class="w3-badge demo w3-border w3-transparent w3-hover-white"
+              id="slide1"
+              onclick="currentDiv(1)"
+            ></span>
+            <span
+              class="w3-badge demo w3-border w3-transparent w3-hover-white"
+              id="slide2"
+              onclick="currentDiv(2)"
+            ></span>
+            <span
+              class="w3-badge demo w3-border w3-transparent w3-hover-white"
+              id="slide3"
+              onclick="currentDiv(3)"
+            ></span>
+          </div>
+        </div>
       </div>
-    </footer>
+      <footer id="footer">
+        <p id="footerline"></p>
+        <div id="socialmedia">
+          <button
+            onclick="window.location.href = 'facebook.com' ; "
+            class="mediabuttons"
+          >
+            <img src="img/facebook.png" alt="facebook" class="mediapic" />
+          </button>
+          <button
+            onclick="window.location.href = 'instagram.com' ; "
+            class="mediabuttons"
+          >
+            <img src="img/instagram.png" alt="instagram" class="mediapic" />
+          </button>
+          <button
+            onclick="window.location.href = 'spotify.com' ; "
+            class="mediabuttons"
+          >
+            <img src="img/youtube.png" alt="spotify" class="mediapic" />
+          </button>
+          <button
+            onclick="window.location.href = 'tidal.com' ; "
+            class="mediabuttons"
+          >
+            <img src="img/twitter.png" alt="tidal" class="mediapic" />
+          </button>
+          <button
+            onclick="window.location.href = 'apple.com' ; "
+            class="mediabuttons"
+          >
+            <img src="img/applemusic.png" alt="applemusic" class="mediapic" />
+          </button>
+          <button
+            onclick="window.location.href = 'apple.com' ; "
+            class="mediabuttons"
+          >
+            <img src="img/applemusic.png" alt="applemusic" class="mediapic" />
+          </button>
+        </div>
+      </footer>
+    </div>
   </body>
   <script src="js/index.js"></script>
 </html>
